@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/usdTetxt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="28dp"
+        android:text="USD"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/chfText"
+        app:layout_constraintEnd_toEndOf="@+id/chfText"
+        app:layout_constraintStart_toStartOf="@+id/chfText"
+        app:layout_constraintTop_toBottomOf="@+id/jpyText" />
+
+    <TextView
+        android:id="@+id/chfText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="146dp"
+        android:text="CHF"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/usdTetxt" />
+
+    <TextView
+        android:id="@+id/jpyText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="22dp"
+        android:text="JPY"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/usdTetxt"
+        app:layout_constraintEnd_toEndOf="@+id/usdTetxt"
+        app:layout_constraintStart_toStartOf="@+id/usdTetxt"
+        app:layout_constraintTop_toBottomOf="@+id/tryText" />
+
+    <TextView
+        android:id="@+id/tryText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="18dp"
+        android:text="TRY"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/jpyText"
+        app:layout_constraintEnd_toEndOf="@+id/jpyText"
+        app:layout_constraintStart_toStartOf="@+id/jpyText"
+        app:layout_constraintTop_toBottomOf="@+id/cadText" />
+
+    <TextView
+        android:id="@+id/cadText"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="102dp"
+        android:layout_marginBottom="15dp"
+        android:text="CAD"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tryText"
+        app:layout_constraintEnd_toEndOf="@+id/tryText"
+        app:layout_constraintStart_toStartOf="@+id/tryText"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="71dp"
+        android:layout_marginEnd="33dp"
+        android:layout_marginBottom="63dp"
+        android:onClick="GETREATES"
+        android:text="GET RATES"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/chfText" />
+
+
+</android.support.constraint.ConstraintLayout>
